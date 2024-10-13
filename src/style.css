@@ -1,0 +1,141 @@
+@media print {
+    html{
+        height: auto !important;
+    }
+    body{
+        height: auto !important;
+        overflow: auto !important;
+    }
+    body>div#app{
+        height: auto !important;
+        overflow: auto !important;
+    }
+}
+
+html{
+	width: 100%;
+	background: url(background.jpg) no-repeat center center fixed #e0e0e0; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body>div#app{
+	overflow-x: hidden;
+    overflow-y: overlay;
+    padding: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.a+div.a{
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.rs-picker-menu {
+    position: absolute;
+    text-align: left;
+    z-index: 7;
+    border-radius: 6px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.06), 0 4px 4px rgba(0,0,0,.12);
+    box-shadow: 0 0 10px rgba(0,0,0,.06), 0 4px 4px rgba(0,0,0,.12);
+    overflow: hidden;
+    -webkit-transition: none;
+    transition: none;
+}
+.rs-picker-toggle {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+		display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: 0!important;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 6px;
+}
+.rs-picker-toggle-caret {
+    display: inline-block;
+    margin-left: 2px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-weight: 400;
+    color: #8e8e93;
+}
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret, .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+    top: 7px;
+}
+.rs-picker-toggle.rs-btn .rs-picker-toggle-caret {
+    right: 12px;
+}
+.rs-picker-placement-bottom-end .rs-picker-toggle-caret:before, .rs-picker-placement-bottom-start .rs-picker-toggle-caret:before, .rs-picker-toggle-caret:before {
+    content: "\ea08";
+}
+.rs-picker-toggle-caret:before {
+    font-family: rsuite-icon-font!important;
+}
+.rs-picker-toggle-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.rs-picker-menu .rs-picker-search-bar {
+    position: relative;
+    padding: 6px 12px 12px;
+}
+.rs-picker-menu .rs-tree {
+    padding: 0 12px 12px 0;
+}
+.rs-picker-default .rs-picker-toggle {
+    position: relative;
+    z-index: 5;
+    padding-right: 32px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    color: #575757;
+    border: 1px solid #e5e5ea;
+}
+.rs-tree {
+    background-color: #fff;
+    max-height: 360px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+  }
